@@ -1,6 +1,6 @@
-# Hi, I’m Jeffrey Thompson
+### Visit my website: https://jaffulee.github.io/Jaffulee/
 
-Visit my website: https://jaffulee.github.io/Jaffulee/
+# Hi, I’m Jeffrey Thompson
 
 **Data Engineering & Analytics Consultant**  
 Building reliable data pipelines and turning complex data into clear, trusted insights.
@@ -56,3 +56,6 @@ I’m a data engineering and analytics consultant with a strong mathematical bac
 
 ## Support
 If you’ve found my work helpful: ☕ https://buymeacoffee.com/jaffulee
+
+##### Website Template: https://github.com/Jaffulee/draft_personal_website
+
