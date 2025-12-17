@@ -1,5 +1,7 @@
 # Hi, I’m Jeffrey Thompson
 
+Visit my website: https://jaffulee.github.io/Jaffulee/
+
 **Data Engineering & Analytics Consultant**  
 Building reliable data pipelines and turning complex data into clear, trusted insights.
 
@@ -23,7 +25,7 @@ I’m a data engineering and analytics consultant with a strong mathematical bac
 - **Data engineering:** Automated pipelines, medallion architectures (Bronze–Silver–Gold), CDC  
 - **Platforms:** Snowflake, dbt  
 - **Analytics:** Tableau, Power BI, Alteryx  
-- **Cloud & tooling:** AWS (S3, EC2), GitHub, Docker  
+- **Cloud & tooling:** AWS (S3, EC2), GitHub, Azure  
 
 ---
 
