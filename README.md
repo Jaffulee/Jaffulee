@@ -1,50 +1,56 @@
-# 👋 Hi, I'm Jeffrey!
+# Hi, I’m Jeffrey Thompson
 
-I'm a **Data Engineer** with a background in **Python**, **SQL**, and a variety of analytics and transformation tools. I bring together a strong mathematical foundation, effective communication skills, and practical experience in data preparation and problem solving.
+**Data Engineering & Analytics Consultant**  
+Building reliable data pipelines and turning complex data into clear, trusted insights.
 
----
-
-## 🎓 Academic Background
-
-I hold a **Master of Advanced Study in Pure Mathematics** from the **University of Cambridge**, where I sharpened my ability to communicate complex mathematical ideas clearly and effectively. My essay, *The Hodge Decomposition Theorem*, exemplifies how I restructured technical concepts to be more accessible — a skill I carry into every data project I undertake.
-
----
-
-## 💼 Professional Experience
-
-My professional journey has included:
-- Developing robust **data preparation pipelines** and contributing to **client-facing analytics projects**
-- Working on numerous **SQL projects** (see my repositories!)
-- Tackling mathematical anxiety in classrooms through **theoretical research** and **practical teaching**
-- Leading teams in dynamic environments, including team leadership training
-
-Currently, I'm a proud member of **The Data School**, where I continue to grow by applying my analytical mindset to new and challenging data problems. I’m passionate about combining mathematics, communication, and data engineering to deliver meaningful insights.
+- GitHub: https://github.com/Jaffulee  
+- LinkedIn: https://www.linkedin.com/in/jeffrey-brian-thompson/  
+- Writing: https://www.thedataschool.co.uk/blog/jeffrey-brian-thompson/  
 
 ---
 
-## 🛠️ Skills
+## About
+I’m a data engineering and analytics consultant with a strong mathematical background, working at the intersection of data engineering, analytics, and statistics. I care about building systems people can trust, and explaining complex ideas clearly.
 
-- **Languages & Tools**: Python, SQL, dbt, Tableau, Power BI, Jupyter, pandas, numpy, git
-- **Key Skills**: Data preparation, ETL/ELT, analytics, problem-solving, communication, technical writing
-
----
-
-## 🎵 Outside the Office
-
-Beyond data and code, I’m a **music producer** published work. I also enjoy:
-- ♟️ Playing chess
-- 🍳 Cooking
-- 🌍 Travelling and discovering new experiences
+**Academic background**
+- Master of Advanced Study in Pure Mathematics (Part III), University of Cambridge  
+- First-Class BSc in Mathematics, University of Surrey  
 
 ---
 
-## 📫 Contact
-
-Feel free to connect or check out more of my work:
-- 💼 [LinkedIn](https://www.linkedin.com/in/jeffrey-brian-thompson-0b5390269/)
-- 🎵 [SoundCloud](https://soundcloud.com/jaffulee/tracks)
-- 🎵 [Spotify](https://open.spotify.com/artist/7azs14vioRBXqPDRd8eNOz?si=Xs2cHFLXSTGMUNy77XuAhQ)
+## Skills & Tools
+- **Languages:** Python, SQL  
+- **Data engineering:** Automated pipelines, medallion architectures (Bronze–Silver–Gold), CDC  
+- **Platforms:** Snowflake, dbt  
+- **Analytics:** Tableau, Power BI, Alteryx  
+- **Cloud & tooling:** AWS (S3, EC2), GitHub, Docker  
 
 ---
 
-Thanks for stopping by! 👋
+## Selected Projects
+- **Deep Neural Network (from scratch)** — maths-first implementation in Python  
+  Repo: https://github.com/Jaffulee/deep_neural_network
+
+- **Bike Points API Project** — API ingestion, transformation, and exploration  
+  Repo: https://github.com/Jaffulee/Bike-points-api
+
+- **SQL & Data Preparation Work** — collection of SQL/data prep repos  
+  Profile: https://github.com/Jaffulee
+
+---
+
+## Writing & Research
+- Blog: https://www.thedataschool.co.uk/blog/jeffrey-brian-thompson/  
+- Paper: *Graphs with equal girth and circumference*  
+  https://doi.org/10.48550/arXiv.2210.04109
+
+---
+
+## Music
+- SoundCloud: https://soundcloud.com/jaffulee/tracks  
+- Spotify: https://open.spotify.com/artist/7azs14vioRBXqPDRd8eNOz?si=Xs2cHFLXSTGMUNy77XuAhQ
+
+---
+
+## Support
+If you’ve found my work helpful: ☕ https://buymeacoffee.com/jaffulee
