@@ -113,6 +113,27 @@ a:hover { text-decoration: underline; }
 .hero-copy h2 { margin: 0 0 .6rem; font-size: clamp(1.6rem, 1.4vw + 1.2rem, 2.2rem); }
 .hero-copy p { margin: 0; color: var(--muted); max-width: 70ch; }
 .hero-links { margin-top: .25rem; }
+.hero-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin: .5rem 0 0;
+}
+
+.hero-links a{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* Add separators automatically, without weird line-wrap behaviour */
+.hero-links a:not(:last-child)::after{
+  content: "•";
+  margin-left: .75rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
 .hero-links span { color: rgba(255,255,255,.25); padding: 0 .35rem; }
 .hero-actions { display: flex; gap: .75rem; margin-top: 1.1rem; flex-wrap: wrap; }
 
