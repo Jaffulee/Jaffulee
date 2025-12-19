@@ -180,3 +180,33 @@ a:hover { text-decoration: underline; }
   .avatar { width: 120px; }
   .section { padding: 3.2rem 0; }
 }
+
+/* ===== Examples grouping (content styles) ===== */
+.section-intro { max-width: 75ch; }
+
+.group { margin-top: 2rem; }
+.group-title {
+  margin: 0 0 .25rem;
+  font-size: 1.1rem;
+}
+.group-subtitle { margin: 0 0 1rem; }
+
+/* Slightly nicer spacing between grouped grids */
+.group .grid { margin-top: 1rem; }
+
+/* Optional: subtle marker for each group heading */
+.group-title::before{
+  content: "";
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 999px;
+  background: rgba(106,169,255,.65);
+  margin-right: .55rem;
+  vertical-align: middle;
+}
+/* Optional: tighter intro width for section lead paragraphs */
+.section-intro { max-width: 75ch; }
+
+
+

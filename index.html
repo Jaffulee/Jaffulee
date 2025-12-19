@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jeffrey Brian Thompson — Data Engineering & Analytics Consultant</title>
-  <meta name="description" content="Jeffrey Brian Thompson — Data Engineering & Analytics Consultant. Reliable data pipelines and clear, trusted insights. Projects, writing, experience highlights, music, and contact." />
+  <meta name="description" content="Jeffrey Thompson — Data Engineering & Analytics Consultant. Reliable data pipelines and clear, trusted insights. Projects, writing, experience highlights, music, and contact." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="branding">
-        <h1 class="site-title">Jeffrey Brian Thompson</h1>
+        <h1 class="site-title">Jeffrey Thompson</h1>
         <p class="site-tagline">Data Engineering & Analytics Consultant • UK</p>
       </div>
 
@@ -22,6 +22,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#examples">Data Engineering</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
           <li><a href="#writing">Writing</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#music">Music</a></li>
@@ -209,39 +211,245 @@
       </div>
     </section>
 
-    <!-- WRITING -->
-    <section id="writing" class="section">
+    <!-- DATA ENGINEERING -->
+    <section id="examples" class="section">
       <div class="container">
-        <h3 class="section-title">Writing & Knowledge Sharing</h3>
-        <p>
-          I regularly write about data topics with a focus on accessibility and practical understanding. Topics include:
-        </p>
-        <ul class="list">
-          <li>Data preparation and modelling</li>
-          <li>Granularity, aggregation, and joins</li>
-          <li>Storytelling with data</li>
-          <li>BI best practices</li>
-        </ul>
-        <p>
-          You can find my writing here:
-          <a href="https://www.thedataschool.co.uk/blog/jeffrey-brian-thompson/" target="_blank" rel="noopener">The Data School Blog</a>
+        <h3 class="section-title">Data Engineering</h3>
+        <p class="section-intro">
+          A small ecosystem of projects that fit together as a pipeline: <strong>API extraction (Bronze)</strong> → <strong>modelling in dbt (Silver/Gold)</strong>.
+          The extraction repos produce raw JSON data designed to feed the dbt analytics layer.
         </p>
 
         <article class="card">
           <header class="card-head">
-            <h4>Research & Academic Work</h4>
-            <span class="meta">Graph theory • arXiv</span>
+            <h4>How these repos connect</h4>
+            <span class="meta">Bronze → Silver → Gold</span>
           </header>
-          <p>
-            Co-author of a graph theory research paper exploring structural properties of graphs:
-            <em>Graphs with equal girth and circumference</em>.
+          <ul class="list">
+            <li>
+              <strong>Bronze (raw ingestion):</strong>
+              Python pipelines extract raw API data and load it to S3:
+              <a href="https://github.com/Jaffulee/deng3-amplitude" target="_blank" rel="noopener">Amplitude</a>,
+              <a href="https://github.com/Jaffulee/deng3-mailchimp" target="_blank" rel="noopener">Mailchimp</a>,
+              <a href="https://github.com/Jaffulee/Bike-points-api" target="_blank" rel="noopener">TfL BikePoint</a>.
+            </li>
+            <li>
+              <strong>Analytics layer:</strong>
+              dbt models transform raw sources into analytics-ready tables:
+              <a href="https://github.com/Jaffulee/dbt-cloud-deng3" target="_blank" rel="noopener">dbt Cloud project</a>.
+            </li>
+          </ul>
+          <p class="meta" style="margin-top:.75rem;">
+            Tip: when viewing the repos, start with the dbt project for the “final shape”, then follow links upstream to the extraction pipelines.
           </p>
-          <div class="actions">
-            <a class="btn" href="https://doi.org/10.48550/arXiv.2210.04109" target="_blank" rel="noopener">Read the paper</a>
-          </div>
         </article>
+
+        <div class="grid" style="margin-top:1rem;">
+          <article class="card">
+            <header class="card-head">
+              <h4>dbt Cloud Analytics</h4>
+              <span class="meta">Transformations • Modelling • Documentation</span>
+            </header>
+            <p>
+              A dbt Cloud project snapshot modelling Amplitude and Mailchimp data into trusted, analytics-ready models using layered patterns,
+              documentation, lineage, and testability.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/dbt-cloud-deng3" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Amplitude Extraction</h4>
+              <span class="meta">API ingestion • Parsing • S3</span>
+            </header>
+            <p>
+              Extracts raw, event-level product analytics data from the Amplitude Export API, normalises raw files, and uploads to S3 for downstream modelling.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/deng3-amplitude" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Mailchimp Extraction</h4>
+              <span class="meta">Campaigns • Engagement • S3</span>
+            </header>
+            <p>
+              Extracts campaign metadata and email engagement activity from the Mailchimp Marketing API, writes JSON, uploads to S3, and logs retries/errors.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/deng3-mailchimp" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>TfL BikePoint Ingestion</h4>
+              <span class="meta">API → JSON → S3</span>
+            </header>
+            <p>
+              A lightweight ingestion example demonstrating extraction, cloud loading, and a repeatable pattern suitable for scheduling —
+              designed to feed downstream analytics modelling.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/Bike-points-api" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
+
+    <!-- TUTORIALS -->
+    <section id="tutorials" class="section">
+      <div class="container">
+        <h3 class="section-title">Tutorials and follow-alongs</h3>
+        <p class="section-intro">
+          Short, practical guides you can fork and run locally. These are written as “follow-along” repos to help you get set up quickly and learn by doing.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <header class="card-head">
+              <h4>Draft Portfolio Website</h4>
+              <span class="meta">HTML/CSS • GitHub Pages</span>
+            </header>
+            <p>
+              A clean, minimal personal website template designed to be easy to customise and deploy. Includes a fast workflow for filling content using AI tools.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/draft_personal_website" target="_blank" rel="noopener">Repository</a>
+              <a class="btn" href="https://jaffulee.github.io/draft_personal_website/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>LaTeX in VS Code</h4>
+              <span class="meta">Windows • LaTeX workflow</span>
+            </header>
+            <p>
+              A quick setup guide for writing LaTeX in VS Code on Windows, with a repo structure that keeps PDFs tracked and auxiliary files ignored.
+              Includes a small Sympy example to support maths workflows.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/LaTeX_in_VSCode_Intro" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Gemini API in Python</h4>
+              <span class="meta">Python • VS Code • .env</span>
+            </header>
+            <p>
+              A walkthrough for setting up a Python environment in VS Code and making Gemini API calls, including one-shot prompts, chat, and streaming output.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/gemini_api_template" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Tables in MATLAB</h4>
+              <span class="meta">MATLAB • Data structures</span>
+            </header>
+            <p>
+              A quick intro to creating, storing, reading, and manipulating MATLAB tables (including mixed data types), with console output to support learning.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/tables_in_matlab_intro" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section">
+      <div class="container">
+        <h3 class="section-title">Writing & Knowledge Sharing</h3>
+
+        <!-- GRID WRAPPER (this is the key change) -->
+        <div class="grid">
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Data & Analytics Writing</h4>
+              <span class="meta">Blog posts • Practical insight</span>
+            </header>
+            <p>
+              I regularly write about data topics with a focus on accessibility and practical understanding.
+              Topics include:
+            </p>
+            <ul class="list">
+              <li>Data preparation and modelling</li>
+              <li>Granularity, aggregation, and joins</li>
+              <li>Storytelling with data</li>
+              <li>BI best practices</li>
+            </ul>
+            <div class="actions">
+              <a class="btn" href="https://www.thedataschool.co.uk/blog/jeffrey-brian-thompson/" target="_blank" rel="noopener">
+                Read the blog
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Mathematical Writing</h4>
+              <span class="meta">Pure mathematics • Part III</span>
+            </header>
+            <p>
+              A self-contained mathematical essay proving the Hodge Decomposition Theorem,
+              with a geometry-first extension to manifolds with boundary.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/LaTeX-The-Hodge-Decomposition-Theorem-Essay" target="_blank" rel="noopener">
+                View the essay
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Tutoring & Educational Materials</h4>
+              <span class="meta">A-level mathematics</span>
+            </header>
+            <p>
+              Supplementary A-level mathematics notes developed through tutoring,
+              focusing on method selection, reasoning, and clear worked solutions.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/Jaffulee/Edexcel-A-Level-Maths-Tutoring-Materials" target="_blank" rel="noopener">
+                View materials
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <h4>Research & Academic Work</h4>
+              <span class="meta">Graph theory • arXiv</span>
+            </header>
+            <p>
+              Co-author of a graph theory research paper exploring structural properties of graphs:
+              <em>Graphs with equal girth and circumference</em>.
+            </p>
+            <div class="actions">
+              <a class="btn" href="https://doi.org/10.48550/arXiv.2210.04109" target="_blank" rel="noopener">
+                Read the paper
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
