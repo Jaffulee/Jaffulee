@@ -72,7 +72,7 @@ A connected set of projects demonstrating an end-to-end analytics pipeline:
 
 Step-by-step guides and starter repositories designed for learning and reuse:
 
-- **Getting Started with GitHub and Python (VS Code)**
+- **Getting Started with GitHub and Python (VS Code)**  
   https://github.com/Jaffulee/getting_started_using_github_and_python
 
 - **Personal Website Template (GitHub Pages)**  
