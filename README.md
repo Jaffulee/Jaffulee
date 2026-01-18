@@ -30,11 +30,31 @@ I’m a data engineering and analytics consultant with a strong mathematical bac
 ---
 
 ## Selected Projects
+
+AI Vehicle Tracking, Counting & Lane Estimation (click to watch) 
+
+<a href="https://youtu.be/qtE5oG2CGNY" target="_blank" rel="noopener noreferrer">
+  <img
+    src="https://img.youtube.com/vi/qtE5oG2CGNY/hqdefault.jpg"
+    alt="AI Car Counting – Tracked output demo 1 (YouTube)"
+    width="720"
+  />
+</a>
+
+<!-- 
+<a href="https://youtu.be/A_FpUGUQG-s" target="_blank" rel="noopener noreferrer">
+  <img
+    src="https://img.youtube.com/vi/A_FpUGUQG-s/hqdefault.jpg"
+    alt="AI Car Counting – Tracked output demo 2 (YouTube)"
+    width="720"
+  />
+</a> 
+-->
 - **Deep Neural Network (from scratch)** — maths-first implementation in Python  
   Repo: https://github.com/Jaffulee/deep_neural_network
 
-- **Bike Points API Project** — API ingestion, transformation, and exploration  
-  Repo: https://github.com/Jaffulee/Bike-points-api
+- **AI Vehicle Tracking, Counting & Lane Estimation** — YOLO-based computer vision pipeline for real traffic analytics  
+  Repo: https://github.com/Jaffulee/AI-Car-Counting
 
 - **SQL & Data Preparation Work** — collection of SQL/data prep repos  
   Profile: https://github.com/Jaffulee
