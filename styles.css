@@ -69,6 +69,19 @@ a:hover { text-decoration: underline; }
 .site-nav a:hover { background: rgba(255,255,255,.06); text-decoration: none; }
 .site-nav a:focus-visible { outline: 3px solid var(--brand-ink); outline-offset: 2px; }
 
+/* Hero layout */
+.hero {
+  padding: 4.5rem 0 3.5rem;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+
 /* Per-section gradient background
    Each section fades from lighter at the top to darker at the bottom.
    Hero/About are handled specially via .hero-about below. */
