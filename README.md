@@ -5,6 +5,8 @@
 **Data Engineering & Analytics Consultant**  
 Building reliable data pipelines and turning complex data into clear, trusted insights.
 
+This profile highlights public projects, writing, and learning resources. It is not a full CV; much of my client and professional delivery work is not publicly available.
+
 - GitHub: https://github.com/Jaffulee  
 - LinkedIn: https://www.linkedin.com/in/jeffrey-brian-thompson/  
 - Writing: https://www.thedataschool.co.uk/blog/jeffrey-brian-thompson/  
@@ -90,7 +92,7 @@ A connected set of projects demonstrating an end-to-end analytics pipeline:
 
 ## Tutorials & Follow-Alongs
 
-Step-by-step guides and starter repositories designed for learning and reuse:
+Step-by-step guides and starter repositories designed to be cloned, run locally, and reused:
 
 - **Getting Started with GitHub and Python (VS Code)**  
   https://github.com/Jaffulee/getting_started_using_github_and_python
