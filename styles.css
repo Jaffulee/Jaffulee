@@ -195,12 +195,6 @@ a:hover { text-decoration: underline; }
 .hero-links span { color: rgba(255,255,255,.25); padding: 0 .35rem; }
 .hero-actions { display: flex; gap: .75rem; margin-top: 1.1rem; flex-wrap: wrap; }
 
-/* Responsive tweaks */
-@media (max-width: 720px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 1.25rem; }
-  .avatar-wrap { width: 120px; }
-}
-
 /* Cards / Lists / Grid */
 .card {
   background: var(--panel);
@@ -220,6 +214,10 @@ a:hover { text-decoration: underline; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+}
+
+.data-project-grid {
+  margin-top: 1rem;
 }
 
 /* Featured project video */
@@ -289,12 +287,16 @@ a:hover { text-decoration: underline; }
   .header-inner { grid-template-columns: 1fr; }
   .site-nav ul { justify-content: flex-start; }
   .hero-inner { grid-template-columns: 1fr; gap: 1.25rem; }
-  .avatar { width: 120px; }
+  .avatar-wrap { width: 120px; }
   .section { padding: 3.2rem 0; }
 }
 
 /* ===== Examples grouping (content styles) ===== */
 .section-intro { max-width: 75ch; }
+
+.data-flow-tip {
+  margin-top: .75rem;
+}
 
 .group { margin-top: 2rem; }
 .group-title {
@@ -317,7 +319,4 @@ a:hover { text-decoration: underline; }
   margin-right: .55rem;
   vertical-align: middle;
 }
-/* Optional: tighter intro width for section lead paragraphs */
-.section-intro { max-width: 75ch; }
-
 

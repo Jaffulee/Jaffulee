@@ -56,8 +56,8 @@ AI Vehicle Tracking, Counting & Lane Estimation (click to watch)
 - **AI Vehicle Tracking, Counting & Lane Estimation** — YOLO-based computer vision pipeline for real traffic analytics  
   Repo: https://github.com/Jaffulee/AI-Car-Counting
 
-- **SQL & Data Preparation Work** — collection of SQL/data prep repos  
-  Profile: https://github.com/Jaffulee
+- **MCP Documentation Explorer** — local and remote MCP workflows for LLM-driven document exploration
+  Repo: https://github.com/Jaffulee/MCP_Documentation_Explorer
 
 ---
 
@@ -98,11 +98,18 @@ Step-by-step guides and starter repositories designed for learning and reuse:
 - **Personal Website Template (GitHub Pages)**  
   https://github.com/Jaffulee/draft_personal_website
 
+- **Markdown Blog Reader Template (GitHub Pages)** — static Markdown reader with JSON document metadata and a reusable viewer page
+  Repo: https://github.com/Jaffulee/simple-md-reader-page
+  Live demo: https://jaffulee.github.io/simple-md-reader-page/index.html
+
 - **LaTeX in VS Code (Windows)**  
   https://github.com/Jaffulee/LaTeX_in_VSCode_Intro
 
 - **Gemini API in Python — Walkthrough & Template**  
   https://github.com/Jaffulee/gemini_api_template
+
+- **README Helper** — Python tool for AI-assisted README generation using Git-aware repository context and Gemini
+  https://github.com/Jaffulee/readme_helper
 
 - **Working with Tables in MATLAB**  
   https://github.com/Jaffulee/tables_in_matlab_intro
